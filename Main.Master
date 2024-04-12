@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="DoAn_LTW.Site1" %>
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+        .auto-style25 {
+            background-color: black;
+            width: 100%;
+            height: 101px;
+            margin-left: 0px;
+        }
+        .auto-style33 {
+            width: 48px;
+            height: 45px;
+        }
+        .auto-style38 {
+            width: 100%;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: small;
+            color: #FFDE00;
+            height: 57px;
+            background-color: #000000;
+        }
+        .auto-style40 {
+            width: 100%;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            background-color: #DEDEDE;
+        }
+        .auto-style41 {
+            font-weight: bold;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .auto-style42 {
+            text-align: center;
+        }
+        </style>
+</head>
+
+   
+<body>
+     <form id="form1" runat="server">
+        <div id="wrapper">
+            <table class="auto-style25">
+                 <tr>
+                     <td>
+                          <asp:Image ID="Image1" runat="server" Height="140px" ImageUrl="~/Image/logo.png" Width="248px" CssClass="auto-style32" />
+                     
+                          <a id="hinhgiohang0" href="https://localhost:44388/Customers/GioHang.aspx">
+                            <asp:Image ID="imgGiohang" runat="server" Height="70px" ImageUrl="https://img.icons8.com/?size=512&id=BQuGRfV3vMf1&format=png" Width="70px"  />
+                          </a>
+                          <asp:Label  ID="lbSoluong" runat="server" Text="0" Font-Size="X-Large" 
+                             Font-Bold="True" ForeColor="yellow">
+                        </asp:Label>
+                     </td>
+                 </tr>
+                 <tr class="auto-style42">
+                         <asp:Menu ID="Menu6" runat="server" BackColor="#FFDE00" ForeColor="Black" Height="51px" Orientation="Horizontal" RenderingMode="Table" Width="100%" CssClass="auto-style41">
+                                    <DynamicMenuStyle BorderStyle="Double" />
+                                    <Items>
+                                        <asp:MenuItem NavigateUrl="~/TrangChu.aspx" Text="Trang chủ" Value="Trang chủ"></asp:MenuItem>
+                                        <asp:MenuItem Text="Guitar" Value="1" NavigateUrl="~/Customers/Guitar.aspx">
+                                        </asp:MenuItem>
+                                        <asp:MenuItem Text="Trống" Value="2" NavigateUrl="~/Customers/Trong.aspx">
+                                        </asp:MenuItem>
+                                        <asp:MenuItem Text="Piano" Value="3" NavigateUrl="~/Customers/Piano.aspx">
+                                        </asp:MenuItem>
+                                        <asp:MenuItem Text="Phụ kiện" Value="4" NavigateUrl="~/Customers/Phukien.aspx">
+                                        </asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/Admin/ChiTietSanPham.aspx" Text="Chi tiết nhạc cụ" Value="5"></asp:MenuItem>
+                                        <asp:MenuItem NavigateUrl="~/Admin/ThemSanPham.aspx" Text="Thêm nhạc cụ" Value="6"></asp:MenuItem>
+                                        <asp:MenuItem Text="Đăng nhập" Value="7" NavigateUrl="~/Login.aspx"></asp:MenuItem>
+                                    </Items>
+                                </asp:Menu>
+                 </tr>
+                                    
+            </table>
+        </div>
+         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">        
+                </asp:ContentPlaceHolder>
+     </form>
+
+
+
+    <div class="zalo-chat-widget" data-oaid="1826046657807398929" data-welcome-message="Rất vui khi được hỗ trợ bạn!" data-autopopup="0" data-width="350" data-height="420" style="border: none; visibility: visible; bottom: 52px; right: 52px; position: fixed; width: 60px; z-index: 2147483644 !important;"> 
+        <iframe frameborder="0" allowfullscreen="" scrolling="no" width="350" height="420" src="https://page.widget.zalo.me/?position=null&amp;welcomemessage=R%E1%BA%A5t%20vui%20khi%20%C4%91%C6%B0%E1%BB%A3c%20h%E1%BB%97%20tr%E1%BB%A3%20b%E1%BA%A1n!&amp;autopopup=0&amp;leftside=false&amp;width=350&amp;height=420&amp;style=2&amp;id=7c668dc0-7270-4ff6-aa39-1a44495138db&amp;domain=vietthuongshop.vn&amp;android=false&amp;ios=false" style="max-height: 90vh; position: absolute; bottom: 0px; right: 0px; min-height: 80vh; min-width: 400px;">
+        </iframe></div>  
+        <script type="text/javascript" id="" src="https://sp.zalo.me/plugins/sdk.js"></script>
+
+
+
+          <footer class="auto-style40">
+                    <span style="text-align: center">
+                        <ul>
+                            <p style = "font-family:arial;">
+                                &nbsp;</p>
+                            <p style = "font-family:arial;">
+                                <strong>KẾT NỐI VỚI CHÚNG TÔI TẠI</strong>
+                            </p>
+                            <a href="https://www.facebook.com/vietthuong.vn"><img src="https://img.icons8.com/?size=512&id=13912&format=png" class="auto-style33" ></a>
+			                <a href="https://www.youtube.com/user/videovietthuong"><img src="https://img.icons8.com/?size=512&id=19318&format=png" class="auto-style33"></a>
+			                <a href="https://www.instagram.com/vietthuong.music/"><img src="https://img.icons8.com/?size=96&id=Xy10Jcu1L2Su&format=png" class="auto-style33"></a>
+		                </ul>
+                     </span>
+	                    <div class="auto-style38">
+		                    <br />
+		                    © 2007 - 2018 Công Ty Cổ Phần TM DV SX Việt Thương / Địa chỉ: 386 CMT8, P.10, Q.3, TPHCM /  GPKD số 0304757232 do sở Kế hoạch Đầu tư TPHCM cấp ngày 01/01/2007. Email: info@vietthuong.vn. 
+	                    </div>
+          </footer>
+</body>
+</html>
+
